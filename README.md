@@ -70,7 +70,9 @@ example: `conda create -n pdiff python=3.8`
 
 3. Install via pip using pyproject.toml: from root directory, run: `pip install -e .`
 
-4. Confirm tests are passing: from root directory, run: `pytest tests/`
+4. Copy in stable diffusion VAE model weights file https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/blob/refs%2Fpr%2F1/vae/diffusion_pytorch_model.safetensors to /tests/test_data/sample_pdiff_model/vae and text encoder model weights file https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/blob/main/text_encoder/model.safetensors file to tests/test_data/sample_pdiff_model/text_encoder/
+
+5. Confirm tests are passing: from root directory, run: `pytest tests/`
 Some warnings are expected.
 
 
