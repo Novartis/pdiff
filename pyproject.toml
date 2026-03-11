@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "setuptools_scm[toml]>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdiff"
+requires-python = ">=3.8"
+version = "0.0.1"
+authors = [
+   { name="Steven Cook", email="steven-1.cook@novartis.com"},
+]
+description = "train profile-to-HCI-image generative AI"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'accelerate == 0.30.1',
+    'black',
+    'bitsandbytes',
+    'cellpose',
+    'datasets == 2.14.6',
+    'diffusers == 0.22.0',
+    'ipython',
+    'ipywidgets',
+    'jupyterlab',
+    'mahotas',
+    'matplotlib',
+    'numpy',
+    'pandas',
+    'torch',
+    'scipy',
+    'scikit-image',
+    'tensorboard == 2.12.1',
+    'tifffile',
+    'torchvision',
+    'tqdm',
+    'transformers',
+    'ruff',
+    'sphinx',
+    'sphinx-rtd-theme',
+    'pytest',
+]
+
+# Enables the usage of setuptools_scm
+#[tool.setuptools_scm]
+
+
+#[project.urls]
